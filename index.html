@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bio Site</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Minha Bio</h1>
+  </header>
+
+  <main>
+    <section class="profile">
+      <div class="profile-pic">
+        <img id="profileImage" src="default-avatar.png" alt="Profile Picture">
+        <button id="editPhotoBtn">Editar Foto</button>
+        <input type="file" id="photoInput" accept="image/*" style="display: none;">
+      </div>
+      <div class="bio-info">
+        <p id="bioText">Olá! Esta é minha bio. Clique para editar!</p>
+        <button id="editBioBtn">Editar Bio</button>
+        <textarea id="bioInput" style="display: none;"></textarea>
+      </div>
+    </section>
+
+    <section class="tabs">
+      <div class="tab-buttons">
+        <button class="tab-button active" data-tab="professions">Profissões</button>
+        <button class="tab-button" data-tab="hobbies">Hobbies</button>
+      </div>
+      <div class="tab-content">
+        <div class="tab-panel active" id="professions">
+          <input type="text" placeholder="Buscar profissões..." id="searchProfessions">
+          <ul id="professionList">
+            <li>Desenvolvedor</li>
+            <li>Designer</li>
+            <li>Engenheiro</li>
+            <li>Médico</li>
+          </ul>
+        </div>
+        <div class="tab-panel" id="hobbies">
+          <input type="text" placeholder="Buscar hobbies..." id="searchHobbies">
+          <ul id="hobbyList">
+            <li>Fotografia</li>
+            <li>Leitura</li>
+            <li>Jogos</li>
+            <li>Esportes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-links">
+      <h2>Minhas Redes</h2>
+      <ul>
+        <li><a href="#" target="_blank"><img src="instagram-icon.png" alt="Instagram"> Instagram</a></li>
+        <li><a href="#" target="_blank"><img src="twitter-icon.png" alt="Twitter"> Twitter</a></li>
+        <li><a href="#" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"> LinkedIn</a></li>
+        <li><a href="#" target="_blank"><img src="github-icon.png" alt="GitHub"> GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Minha Bio. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
